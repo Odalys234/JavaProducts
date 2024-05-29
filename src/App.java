@@ -11,7 +11,7 @@ public class App {
         while (continuar) {
             System.out.println("Ingrese el id del producto");
             int idProduct = scanner.nextInt();
-            scanner.nextLine(); // Limpiar el buffer después de nextInt()
+            scanner.nextLine();
 
             System.out.println("Ingrese el nombre del producto");
             String nombreProduct = scanner.nextLine();
@@ -21,7 +21,7 @@ public class App {
 
             System.out.println("Ingrese el precio del producto");
             double precioProduct = scanner.nextDouble();
-            scanner.nextLine(); // Limpiar el buffer después de nextDouble()
+            scanner.nextLine();
 
             Producto product = new Producto(idProduct, nombreProduct, marcaProduct, precioProduct);
             listProducto.add(product);
